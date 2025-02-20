@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Todo List</title>
+</head>
+<body>
+    <h1>My Todo List v1</h1>
+    <ul>
+    {% for todo in todos %}
+        <li>{{ todo.title }} - {% if todo.completed %}완료{% else %}진행중{% endif %}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
